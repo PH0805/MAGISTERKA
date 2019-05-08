@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
+   <children>
+      <GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.0" minWidth="10.0" prefWidth="384.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="105.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="IdQuestion" alignment="TOP_LEFT" text="Numer">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="PytanieLabel" alignment="TOP_LEFT" text="Pytanie:">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Pytanie" alignment="TOP_LEFT" text="Treść" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="NastepnePytanieButton" mnemonicParsing="false" onAction="#CheckQuestion" text="Dalej" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Powrót" mnemonicParsing="false" onAction="#onPowrótdoMenu" text="Powrót " visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="Wynik" prefHeight="31.0" prefWidth="259.0" text="ZDobyłeś x pkt na 20 możlwich" visible="false" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#onPoprzedniePytanie" text="Cofnij" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Button>
+            <RadioButton fx:id="OdpA" graphicTextGap="24.0" mnemonicParsing="false" text="RadioButton" GridPane.rowIndex="2">
+               <toggleGroup>
+                  <ToggleGroup fx:id="OdpGRP" />
+               </toggleGroup>
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="OdpB" mnemonicParsing="false" text="RadioButton" toggleGroup="$OdpGRP" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="OdpC" mnemonicParsing="false" text="RadioButton" toggleGroup="$OdpGRP" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="OdpD" mnemonicParsing="false" text="RadioButton" toggleGroup="$OdpGRP" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <RadioButton fx:id="OdpE" mnemonicParsing="false" text="RadioButton" toggleGroup="$OdpGRP" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </RadioButton>
+         </children>
+      </GridPane>
+   </children>
+</HBox>

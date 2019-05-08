@@ -1,0 +1,24 @@
+<center>
+    <VBox fx:id="VBOXMENU" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+        <children>
+            <Button fx:id="ButtonStart" mnemonicParsing="false" onAction="#openStart" prefHeight="50.0" prefWidth="120.0" text="Start">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="ButtonPokażPytania" mnemonicParsing="false" onAction="#openPokażPytania" prefHeight="50.0" prefWidth="120.0" text="Pokaż Pytania">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+            <Button fx:id="ButtonWyjscie" mnemonicParsing="false" onAction="#OpenWyjscie" prefHeight="50.0" prefWidth="120.0" text="Wyjscie">
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </Button>
+        </children>
+        <children>
+
+        </children>
+    </VBox>
+</center>

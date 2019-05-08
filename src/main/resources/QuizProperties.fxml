@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuizPropertiesController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="253.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="322.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="359.0" minHeight="8.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="359.0" minHeight="0.0" prefHeight="61.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="359.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="359.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Wybierz Test" />
+      <ComboBox fx:id="WybierzButtonCombo" onAction="#onWybierzKategorie" prefWidth="150.0" GridPane.columnIndex="1" />
+      <Label text="Czy chcesz aby test był wielokrotnego wyboru?" GridPane.rowIndex="1" />
+      <CheckBox fx:id="wielokrotnegoWyboruCheckBuutton" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Nie wyświetlaj wariantów odpowiedzi" GridPane.rowIndex="2" />
+      <Label text="Pytania ustawić według kolejności losowej" GridPane.rowIndex="3" />
+      <Label text="Odpowiedzi wyswietlana w loswoej kolejnosci" GridPane.rowIndex="4" />
+      <Button fx:id="StartButton" mnemonicParsing="false" onAction="#openStart" text="Zacznij TEST!" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label text="Ustaw czas na pytanie" GridPane.rowIndex="5" />
+      <CheckBox fx:id="wyświetlOdpCheckBuutton" mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <CheckBox fx:id="losowaKolejnośćPytańCheckBuutton" mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <CheckBox fx:id="odpowiedziLosowaCheckBuutton" mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="TimeTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+</GridPane>
